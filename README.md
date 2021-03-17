@@ -29,7 +29,8 @@
 - Typescript
 - [Styled components](https://styled-components.com/)
 - [Styled Icons](https://styled-icons.js.org/)
-- Graphql
+- GraphQL
+- [GraphQL code generator](https://www.graphql-code-generator.com/)
 - [graphql-request](https://github.com/prisma-labs/graphql-request)
 - [Jest](https://jestjs.io/)
 - [React Leaflet](https://react-leaflet.js.org/)
