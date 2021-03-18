@@ -18,7 +18,7 @@ describe('<Map />', () => {
         slug: 'petropolis',
         location: {
           latitude: 0,
-          longitute: 0
+          longitude: 0
         }
       },
       {
@@ -27,7 +27,7 @@ describe('<Map />', () => {
         slug: 'sao paulo',
         location: {
           latitude: 100,
-          longitute: 50
+          longitude: 50
         }
       }
     ]
