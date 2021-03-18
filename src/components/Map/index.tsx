@@ -6,11 +6,11 @@ interface Place {
   slug: string
   location: {
     latitude: number
-    longitute: number
+    longitude: number
   }
 }
 
-interface MapProps {
+export interface MapProps {
   places?: Place[]
 }
 
@@ -26,11 +26,11 @@ const Map = ({ places }: MapProps) => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {places?.map(({ id, name, location }) => {
-        const { latitude, longitute } = location
+        const { latitude, longitude } = location
         return (
           <Marker
             key={`place-${id}`}
-            position={[latitude, longitute]}
+            position={[latitude, longitude]}
             title={name}
           />
         )
