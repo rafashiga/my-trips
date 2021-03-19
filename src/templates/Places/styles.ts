@@ -1,24 +1,27 @@
 import styled from 'styled-components'
 
-export const Content = styled.section`
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
+export const Wrapper = styled.div`
+  padding: var(--large) var(--medidum);
+`
+
+export const Container = styled.section`
   max-width: var(--container);
   margin: auto;
 `
 
 export const Heading = styled.h1`
   font-size: var(--large);
-  margin-bottom: var(--large);
+  margin-bottom: var(--medium);
 `
 
 export const Body = styled.div`
+  margin-bottom: var(--large);
   p {
-    font-size: var(--medium);
-    line-height: var(--medium);
+    margin-bottom: var(--medium);
   }
+`
+
+export const Gallery = styled.div`
+  display: grid;
+  grid-gap: var(--medium);
 `
