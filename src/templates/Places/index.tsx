@@ -1,8 +1,8 @@
-// import * as S from './styles'
-
+import Image from 'next/image'
 import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline'
 import LinkWrapper from 'components/LinkWrapper'
 import * as S from './styles'
+import { useRouter } from 'next/dist/client/router'
 
 export interface ImageProps {
   url: string
@@ -14,7 +14,7 @@ export interface PlacesTemplateProps {
   place: {
     slug: string
     name: string
-    description: {
+    description?: {
       html: string
     }
     gallery: ImageProps[]
@@ -22,6 +22,12 @@ export interface PlacesTemplateProps {
 }
 
 const PlacesTemplate = ({ place }: PlacesTemplateProps) => {
+  const router = useRouter()
+
+  if (router.isFallback) {
+    return null
+  }
+
   return (
     <>
       <LinkWrapper href="/">
@@ -37,7 +43,14 @@ const PlacesTemplate = ({ place }: PlacesTemplateProps) => {
           )}
           <S.Gallery>
             {place.gallery.map((image, index) => (
-              <img src={image.url} alt={place.name} key={`photo-${index}`} />
+              <Image
+                width={1000}
+                height={600}
+                src={image.url}
+                alt={place.name}
+                key={`photo-${index}`}
+                quality={75}
+              />
             ))}
           </S.Gallery>
         </S.Container>
