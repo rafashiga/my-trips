@@ -19,7 +19,7 @@
   <a href="#space_invader-technologies">Technologies</a>
   <br>
   <br>
-  <img src="./src/assets/website.png">
+  <img src="./public/img/website.png">
   <br>
 </p>
 
@@ -39,3 +39,4 @@
 - Editorconfig
 - Husky
 - Mapbox
+- [nextjs-progressbar](https://github.com/apal21/nextjs-progressbar)
