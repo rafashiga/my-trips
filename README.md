@@ -40,3 +40,4 @@
 - Husky
 - Mapbox
 - [nextjs-progressbar](https://github.com/apal21/nextjs-progressbar)
+- [Next SEO](https://github.com/garmeeh/next-seo)
