@@ -38,3 +38,4 @@
 - Prettier
 - Editorconfig
 - Husky
+- Mapbox
