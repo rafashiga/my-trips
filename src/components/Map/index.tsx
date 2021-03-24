@@ -42,7 +42,11 @@ const Map = ({ places }: MapProps) => {
       <MapContainer
         center={[0, 0]}
         zoom={3}
-        minZoom={2}
+        minZoom={3}
+        maxBounds={[
+          [-180, 180],
+          [180, -180]
+        ]}
         style={{ height: '100%', width: '100%' }}
         attributionControl={false}
       >
