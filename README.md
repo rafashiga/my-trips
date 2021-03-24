@@ -21,6 +21,8 @@
   <br>
   <img src="./public/img/website.png">
   <br>
+  <br>
+  <a href="https://rs-mytrips.vercel.app/" target="_blank">visit</a>
 </p>
 
 ## :space_invader: Technologies
